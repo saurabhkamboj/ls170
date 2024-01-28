@@ -1,0 +1,10 @@
+Protocols are system of rules.
+What is network? At the most basic level, it is two devices connected in such a way that they can communicate and exchange data. A primitive way to do this would be to connect two devices using a LAN cable. LAN stands for local area network (Multiple devices are connected using a hub or in mordern times a switch). Routers basically add as gateway into or out of networks, they enable routing of network traffic to other networks.
+
+Protocols are the set of rules that govern the exchange or transmission of data.
+
+PDU - Protocol data unit
+
+Latency is the measure of time it takes for some data to get from one point in a network to another point in a network (Could be thought of as the measure of delay). Bandwidth is the amount of data that can be sent in a particular unit of time, mostly a second.
+
+TCP - Transmission control protocol
