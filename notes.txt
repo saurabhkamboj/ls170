@@ -8,3 +8,33 @@ PDU - Protocol data unit
 Latency is the measure of time it takes for some data to get from one point in a network to another point in a network (Could be thought of as the measure of delay). Bandwidth is the amount of data that can be sent in a particular unit of time, mostly a second.
 
 TCP - Transmission control protocol
+
+Application layer protocols rely on the protocols at the layers below them to ensure that a message gets to where it is supposed to, and focus instead on the structure of that message and the data it should contain (Can be thought of as rules for how applications talk to each other at a synctatical level).
+
+Uniform resource locator (URL)
+Uniform resource identifier (URI)
+A URL is a part of an URI?
+
+Hyper text transfer protocol (HTTP, stateless protocol)
+Hypre text markup language (HTML)
+Secure HTTP (HTTPS)
+
+Files from a server to my browser (the client) are sent using the HTTP application protocol. It is also a stateless protocol.
+
+Status codes - A 3 digits number sent back by the server after receving a request, it signifies the status of the request. Some of the common status codes are:
+200 > Ok
+301 > Permanently moved
+302 > Found but changed temporarily
+404 > Not found
+500 > Internal server error
+
+AJAX - Asynchronus Javascript and XML, plays a role in displaying dynamic content in web applications.
+
+Developers mimic statefulness, despite having to work with HTTP, which is a stateless protocol.
+
+TLS - Transport Layer Security
+SSL - Secure Sockets Layer
+
+Session ID is a random string that comes in a form of a cookie stored on the computer.
+
+Developing and securing a web application is a fragile process. When you are coding or debugging a web application, it's important to eshtablish a mental model of where you are when analyzing a piece of code.
