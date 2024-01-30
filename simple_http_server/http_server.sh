@@ -3,8 +3,18 @@
 function server () {
   while true
   do
-    read message
-    echo "You said: $message"
+    read method path version
+    if [[ $method = 'GET' ]]; then
+
+      if [[ -f ./www/$path ]]; then
+
+        echo -e 'HTTP/1.1 200 OK\r\n\r\n'; cat ./www/$path
+      else
+        echo -e 'HTTP/1.1 404 Not Found\r\n\r\n'
+      fi
+    else
+      echo -e 'HTTP/1.1 400 Bad Request\r\n\r\n'
+    fi
   done
 }
 
