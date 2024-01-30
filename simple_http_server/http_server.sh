@@ -20,7 +20,7 @@ function server () {
     then
       if [[ -f ./www/$path ]]
       then
-        echo -e "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: $(wc -c <'./www/'$path)}\r\n\r\n"
+        echo -e "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: $(wc -c <'./www/'$path)\r\n\r\n"
         cat ./www/$path
       else
         echo -e 'HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\n'
@@ -33,4 +33,7 @@ function server () {
 
 coproc SERVER_PROCESS { server; }
 
-netcat -lvp 6789 <&${SERVER_PROCESS[0]} >&${SERVER_PROCESS[1]}
+while true
+do
+netcat -lvp 7132 <&${SERVER_PROCESS[0]} >&${SERVER_PROCESS[1]}
+done
