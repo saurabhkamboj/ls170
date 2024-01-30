@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 
 function server () {
   while true
@@ -33,4 +33,4 @@ function server () {
 
 coproc SERVER_PROCESS { server; }
 
-netcat -lkv 2345 <&${SERVER_PROCESS[0]} >&${SERVER_PROCESS[1]}
+netcat -lvp 6789 <&${SERVER_PROCESS[0]} >&${SERVER_PROCESS[1]}
