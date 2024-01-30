@@ -38,3 +38,8 @@ SSL - Secure Sockets Layer
 Session ID is a random string that comes in a form of a cookie stored on the computer.
 
 Developing and securing a web application is a fragile process. When you are coding or debugging a web application, it's important to eshtablish a mental model of where you are when analyzing a piece of code.
+
+Using netcat - `nc -v [host] [port]`
+
+4xx response codes indicate an error or issue on the client side.
+5xx response codes indicate an error or issue on the server side.
